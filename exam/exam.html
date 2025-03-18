@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Main Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Important Meta Tags -->
+    <meta name="author" content="enote" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <!-- Library Styles -->
+    <link rel="stylesheet" href="../assets/scss/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/scss/libs/perfect-scrollbar.css">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../main.css" />
+
+    <!-- Page Title & Icon -->
+    <title>Exam</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+
+</head>
+
+<body class="scrollbar-5-none">
+
+    <!-- Start Header -->
+    <header class="st-header">
+
+        <div class="container">
+            <div class="header-container">
+                <div class="parent navbar-brand-parent">
+
+                    <div class="navbar-actions">
+                        <div class="navbar-brand">
+                            <a href="../home/home.html">
+                                <!-- <img src="../assets/images/enote-dark.png" alt="logo"> -->
+                                <div class="logo-text">
+                                    <h3>
+                                        <p>ماسـ</p>ـتر باس برو <span>.</span>
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="parent">
+                    <div class="nav-links">
+                        <ul class="list-unstyled text-center p-0">
+                            <li class="li-active">
+                                <a href="../home/home.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                            d="M13 19h6V9.978l-7-5.444-7 5.444V19h6v-6h2v6zm8 1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.49a1 1 0 0 1 .386-.79l8-6.222a1 1 0 0 1 1.228 0l8 6.222a1 1 0 0 1 .386.79V20z">
+                                        </path>
+                                    </svg>
+                                    <div class="link-info">
+                                        <span>الرئيسية</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="../exam-card/exam-card.html">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                            d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zm-.692-2H20V5H4v13.385L5.763 17zm5.53-4.879l4.243-4.242 1.414 1.414-5.657 5.657-3.89-3.89 1.415-1.414 2.475 2.475z">
+                                        </path>
+                                    </svg>
+                                    <div class="link-info">
+                                        <span>الاختبارات</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../files/files.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M4 5V19H20V7H11.5858L9.58579 5H4ZM12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z">
+                                        </path>
+                                    </svg>
+                                    <div class="link-info">
+                                        <span>المحتوي</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../files/files.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M2 11.9998C2 11.1353 2.1097 10.2964 2.31595 9.49631C3.40622 9.55283 4.48848 9.01015 5.0718 7.99982C5.65467 6.99025 5.58406 5.78271 4.99121 4.86701C6.18354 3.69529 7.66832 2.82022 9.32603 2.36133C9.8222 3.33385 10.8333 3.99982 12 3.99982C13.1667 3.99982 14.1778 3.33385 14.674 2.36133C16.3317 2.82022 17.8165 3.69529 19.0088 4.86701C18.4159 5.78271 18.3453 6.99025 18.9282 7.99982C19.5115 9.01015 20.5938 9.55283 21.6841 9.49631C21.8903 10.2964 22 11.1353 22 11.9998C22 12.8643 21.8903 13.7032 21.6841 14.5033C20.5938 14.4468 19.5115 14.9895 18.9282 15.9998C18.3453 17.0094 18.4159 18.2169 19.0088 19.1326C17.8165 20.3043 16.3317 21.1794 14.674 21.6383C14.1778 20.6658 13.1667 19.9998 12 19.9998C10.8333 19.9998 9.8222 20.6658 9.32603 21.6383C7.66832 21.1794 6.18354 20.3043 4.99121 19.1326C5.58406 18.2169 5.65467 17.0094 5.0718 15.9998C4.48848 14.9895 3.40622 14.4468 2.31595 14.5033C2.1097 13.7032 2 12.8643 2 11.9998ZM6.80385 14.9998C7.43395 16.0912 7.61458 17.3459 7.36818 18.5236C7.77597 18.8138 8.21005 19.0652 8.66489 19.2741C9.56176 18.4712 10.7392 17.9998 12 17.9998C13.2608 17.9998 14.4382 18.4712 15.3351 19.2741C15.7899 19.0652 16.224 18.8138 16.6318 18.5236C16.3854 17.3459 16.566 16.0912 17.1962 14.9998C17.8262 13.9085 18.8225 13.1248 19.9655 12.7493C19.9884 12.5015 20 12.2516 20 11.9998C20 11.7481 19.9884 11.4981 19.9655 11.2504C18.8225 10.8749 17.8262 10.0912 17.1962 8.99982C16.566 7.90845 16.3854 6.65378 16.6318 5.47605C16.224 5.18588 15.7899 4.93447 15.3351 4.72552C14.4382 5.52844 13.2608 5.99982 12 5.99982C10.7392 5.99982 9.56176 5.52844 8.66489 4.72552C8.21005 4.93447 7.77597 5.18588 7.36818 5.47605C7.61458 6.65378 7.43395 7.90845 6.80385 8.99982C6.17376 10.0912 5.17754 10.8749 4.03451 11.2504C4.01157 11.4981 4 11.7481 4 11.9998C4 12.2516 4.01157 12.5015 4.03451 12.7493C5.17754 13.1248 6.17376 13.9085 6.80385 14.9998ZM12 14.9998C10.3431 14.9998 9 13.6567 9 11.9998C9 10.343 10.3431 8.99982 12 8.99982C13.6569 8.99982 15 10.343 15 11.9998C15 13.6567 13.6569 14.9998 12 14.9998ZM12 12.9998C12.5523 12.9998 13 12.5521 13 11.9998C13 11.4475 12.5523 10.9998 12 10.9998C11.4477 10.9998 11 11.4475 11 11.9998C11 12.5521 11.4477 12.9998 12 12.9998Z">
+                                        </path>
+                                    </svg>
+                                    <div class="link-info">
+                                        <span>الإعدادات</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="parent">
+
+                    <div class="user-action">
+                        <div class="d-flex">
+                            <div class="user-icon">
+                                <figure style="background-image: url(../assets/images/avatar.png);"></figure>
+                            </div>
+                            <div class="user-action-info">
+                                <h3>خالد شبل</h3>
+                                <span class="active-account">مفعل</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <div class="st-content">
+        <div class="container">
+
+            <div class="exam">
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="exam-details">
+
+                            <div class="exam-info">
+                                <span class="tag">اختبار رقم 25</span>
+                                <span class="tag">اختبار سرعة</span>
+                                <h5>الأختبار التجريبى الأول على المنهج كامل</h5>
+                            </div>
+
+                            <div class="exam-actions">
+                                <div class="exam-time">
+                                    <div class="timer">
+                                        <p class="countdown"></p>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24" />
+                                                <path
+                                                    d="M12,21 C7.581722,21 4,17.418278 4,13 C4,8.581722 7.581722,5 12,5 C16.418278,5 20,8.581722 20,13 C20,17.418278 16.418278,21 12,21 Z"
+                                                    fill="#000000" opacity="0.3" />
+                                                <path
+                                                    d="M13,5.06189375 C12.6724058,5.02104333 12.3386603,5 12,5 C11.6613397,5 11.3275942,5.02104333 11,5.06189375 L11,4 L10,4 C9.44771525,4 9,3.55228475 9,3 C9,2.44771525 9.44771525,2 10,2 L14,2 C14.5522847,2 15,2.44771525 15,3 C15,3.55228475 14.5522847,4 14,4 L13,4 L13,5.06189375 Z"
+                                                    fill="#000000" />
+                                                <path
+                                                    d="M16.7099142,6.53272645 L17.5355339,5.70710678 C17.9260582,5.31658249 18.5592232,5.31658249 18.9497475,5.70710678 C19.3402718,6.09763107 19.3402718,6.73079605 18.9497475,7.12132034 L18.1671361,7.90393167 C17.7407802,7.38854954 17.251061,6.92750259 16.7099142,6.53272645 Z"
+                                                    fill="#000000" />
+                                                <path
+                                                    d="M11.9630156,7.5 L12.0369844,7.5 C12.2982526,7.5 12.5154733,7.70115317 12.5355117,7.96165175 L12.9585886,13.4616518 C12.9797677,13.7369807 12.7737386,13.9773481 12.4984096,13.9985272 C12.4856504,13.9995087 12.4728582,14 12.4600614,14 L11.5399386,14 C11.2637963,14 11.0399386,13.7761424 11.0399386,13.5 C11.0399386,13.4872031 11.0404299,13.4744109 11.0414114,13.4616518 L11.4644883,7.96165175 C11.4845267,7.70115317 11.7017474,7.5 11.9630156,7.5 Z"
+                                                    fill="#000000" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="time-progress">
+                                        <div class="time-inner-progress" id="time-inner-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="exam-check-icon">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 right-side">
+                        <div class="quick-questions-container">
+                            <div class="quick-questions">
+
+                                <div class="quick-questions-header">
+                                    <div class="i">
+                                        <p>جميع الأسئلة</p>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="close-c">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)"
+                                                    fill="#000000">
+                                                    <rect x="0" y="7" width="16" height="2" rx="1" />
+                                                    <rect opacity="0.3"
+                                                        transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) "
+                                                        x="0" y="7" width="16" height="2" rx="1" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="quick-questions-content">
+                                    <div class="question-number correct">1</div>
+                                    <div class="question-number correct">2</div>
+                                    <div class="question-number correct">3</div>
+                                    <div class="question-number correct">4</div>
+                                    <div class="question-number wrong">5</div>
+                                    <div class="question-number correct">6</div>
+                                    <div class="question-number correct">7</div>
+                                    <div class="question-number mark">8</div>
+                                    <div class="question-number correct">9</div>
+                                    <div class="question-number correct">10</div>
+                                    <div class="question-number correct">11</div>
+                                    <div class="question-number correct">12</div>
+                                    <div class="question-number correct">13</div>
+                                    <div class="question-number wrong">14</div>
+                                    <div class="question-number correct">15</div>
+                                    <div class="question-number correct">16</div>
+                                    <div class="question-number mark">17</div>
+                                    <div class="question-number correct">18</div>
+                                    <div class="question-number correct">19</div>
+                                    <div class="question-number correct">20</div>
+                                    <div class="question-number correct">21</div>
+                                    <div class="question-number correct">22</div>
+                                    <div class="question-number mark">23</div>
+                                    <div class="question-number opened">24</div>
+                                    <div class="question-number">25</div>
+                                    <div class="question-number">26</div>
+                                    <div class="question-number">27</div>
+                                    <div class="question-number">28</div>
+                                    <div class="question-number">29</div>
+                                    <div class="question-number">30</div>
+                                    <div class="question-number">31</div>
+                                    <div class="question-number">32</div>
+                                    <div class="question-number">33</div>
+                                    <div class="question-number">34</div>
+                                    <div class="question-number">35</div>
+                                    <div class="question-number">36</div>
+                                    <div class="question-number">37</div>
+                                    <div class="question-number">38</div>
+                                    <div class="question-number">39</div>
+                                    <div class="question-number">40</div>
+                                    <div class="question-number">41</div>
+                                    <div class="question-number">42</div>
+                                    <div class="question-number">43</div>
+                                    <div class="question-number">44</div>
+                                    <div class="question-number">45</div>
+                                    <div class="question-number">46</div>
+                                    <div class="question-number">47</div>
+                                    <div class="question-number">48</div>
+                                    <div class="question-number">49</div>
+                                    <div class="question-number">50</div>
+                                    <div class="question-number">51</div>
+                                    <div class="question-number">52</div>
+                                    <div class="question-number">53</div>
+                                    <div class="question-number">54</div>
+                                    <div class="question-number">55</div>
+                                    <div class="question-number">56</div>
+                                    <div class="question-number">57</div>
+                                    <div class="question-number">58</div>
+                                    <div class="question-number">59</div>
+                                    <div class="question-number">60</div>
+                                </div>
+
+                                <div class="quick-questions-actions">
+                                    <button class="finish">تسليم الإجابات</button>
+                                    <a href="../exam-card/exam-card.html" class="close-exam">
+                                        اغلاق الأختبار
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 left-side">
+
+                        <div class="ques-container">
+
+                            <form action="">
+                                <div class="questions">
+
+                                    <div class="ques">
+
+                                        <div class="ques-head">
+
+                                            <div class="text-sticker d-flex mr-auto">
+                                                <div class="hash">EXP</div>
+                                                <div class="exam-code">4 - 0</div>
+                                                <span class="hash">+ </span>
+                                            </div>
+
+                                            <div class="flag">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                    height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <rect x="0" y="0" width="24" height="24" />
+                                                        <path
+                                                            d="M8,4 L16,4 C17.1045695,4 18,4.8954305 18,6 L18,17.726765 C18,18.2790497 17.5522847,18.726765 17,18.726765 C16.7498083,18.726765 16.5087052,18.6329798 16.3242754,18.4639191 L12.6757246,15.1194142 C12.2934034,14.7689531 11.7065966,14.7689531 11.3242754,15.1194142 L7.67572463,18.4639191 C7.26860564,18.8371115 6.63603827,18.8096086 6.26284586,18.4024896 C6.09378519,18.2180598 6,17.9769566 6,17.726765 L6,6 C6,4.8954305 6.8954305,4 8,4 Z"
+                                                            fill="#000000" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="question-content d-flex">
+                                                <h4 class="text-right"><span>24</span></h4>
+                                                <p>تتميز الفقرة رقم 20 بانها ؟</p>
+                                            </div>
+                                            <div class="question-img">
+                                                <img src="../assets/images/bone.png" alt="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="questions-group">
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="inputGroup">
+                                                        <input class="answer-check" name="radio" type="radio" />
+                                                        <div class="abgd"> <!-- Class Wrong For Worng Answer -->
+                                                            <span>أ</span>
+                                                        </div>
+                                                        <div class="answer">
+                                                            <p>ملتحمة</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="inputGroup">
+                                                        <input class="answer-check" name="radio" type="radio" />
+                                                        <div class="abgd">
+                                                            <span>ب</span>
+                                                        </div>
+                                                        <div class="answer">
+                                                            <p>عريضة</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="inputGroup">
+                                                        <input class="answer-check" name="radio" type="radio" />
+                                                        <div class="abgd">
+                                                            <span>جـ</span>
+                                                        </div>
+                                                        <div class="answer">
+                                                            <p>مفلطحة</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="inputGroup">
+                                                        <input class="answer-check" name="radio" type="radio" />
+                                                        <div class="abgd"> <!-- Class correct For Worng Answer -->
+                                                            <span>د</span>
+                                                        </div>
+                                                        <div class="answer">
+                                                            <p>كبيرة</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                            <div class="form-actions">
+
+                                <!-- الزرار ده هيظهر مع اخر سؤال علشان ينهى الأمتحان ويختفى الزارا بتاع (التالى) -->
+                                <!-- <div class="form-button">
+                                <button class="finish">تسليم الإجابات</button>
+                            </div> -->
+
+                                <div class="form-button">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <polygon points="0 0 24 0 24 24 0 24" />
+                                                <rect fill="#000000" opacity="0.3"
+                                                    transform="translate(8.500000, 12.000000) rotate(-90.000000) translate(-8.500000, -12.000000) "
+                                                    x="7.5" y="7.5" width="2" height="9" rx="1" />
+                                                <path
+                                                    d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z"
+                                                    fill="#000000" fill-rule="nonzero"
+                                                    transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) " />
+                                            </g>
+                                        </svg>
+                                        التالى
+                                    </button>
+                                </div>
+
+                                <div class="form-button">
+                                    <button class="go-quick">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                <rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5"></rect>
+                                                <path
+                                                    d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z"
+                                                    fill="#000000" opacity="0.3"></path>
+                                            </g>
+                                        </svg>
+                                        <span class="text-sm-none">
+                                            عرض قائمة الأسئلة
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="form-button">
+                                    <button>
+                                        السابق
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <polygon points="0 0 24 0 24 24 0 24" />
+                                                <rect fill="#000000" opacity="0.3"
+                                                    transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-12.000000, -12.000000) "
+                                                    x="11" y="5" width="2" height="14" rx="1" />
+                                                <path
+                                                    d="M3.7071045,15.7071045 C3.3165802,16.0976288 2.68341522,16.0976288 2.29289093,15.7071045 C1.90236664,15.3165802 1.90236664,14.6834152 2.29289093,14.2928909 L8.29289093,8.29289093 C8.67146987,7.914312 9.28105631,7.90106637 9.67572234,8.26284357 L15.6757223,13.7628436 C16.0828413,14.136036 16.1103443,14.7686034 15.7371519,15.1757223 C15.3639594,15.5828413 14.7313921,15.6103443 14.3242731,15.2371519 L9.03007346,10.3841355 L3.7071045,15.7071045 Z"
+                                                    fill="#000000" fill-rule="nonzero"
+                                                    transform="translate(9.000001, 11.999997) scale(-1, -1) rotate(90.000000) translate(-9.000001, -11.999997) " />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="answering-info">
+
+                            <div class="answer-info-global">
+                                <p class="opened"></p>
+                                <span>السؤال الحالى</span>
+                            </div>
+
+                            <div class="answer-info-global">
+                                <p class="correct"></p>
+                                <span>مجاب عنة</span>
+                            </div>
+
+                            <div class="answer-info-global">
+                                <p class="wrong"></p>
+                                <span>غير مجاب</span>
+                            </div>
+
+                            <div class="answer-info-global">
+                                <p class="mark"></p>
+                                <span>مراجعة</span>
+                            </div>
+
+                            <div class="answer-info-global">
+                                <p class="not-opened"></p>
+                                <span>لم يفتح</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Libs Scripts -->
+    <script src="../assets/js/libs/jquery-3.6.3.min.js"></script>
+    <script src="../assets/js//libs/popper.js"></script>
+    <script src="../assets/js/libs/bootstrap.min.js"></script>
+    <script src="../assets/js/libs/perfect-scrollbar.min.js"></script>
+    <!-- Main Script -->
+    <script src="../main.js"></script>
+
+    <script>
+
+        let countdownElement = document.querySelector(".countdown");
+        let countdownInterval;
+        let hours, minutes, seconds;
+        let duration = 5 * 60; // Nember Of Seconds * 60
+        const totalDuration = duration;
+        var innerProgress = document.getElementById("time-inner-progress");
+
+        countdownInterval = setInterval(function () {
+            hours = parseInt(duration / 3600);
+            minutes = parseInt(duration % 3600 / 60);
+            seconds = parseInt(duration % 3600 % 60);
+
+            hours = hours < 10 ? `0${hours}` : hours;
+            minutes = minutes < 10 ? `0${minutes}` : minutes;
+            seconds = seconds < 10 ? `0${seconds}` : seconds;
+
+            countdownElement.innerHTML = `${hours}:${minutes}:${seconds}`;
+
+
+            innerProgress.style.width = (duration * 100) / totalDuration + "%";
+
+
+            // if (innerProgress.style.width >= 25 + "%") {
+            //     innerProgress.style.background = "#f6f8ff";
+            // } else if (innerProgress.style.width <= 25 + "%"){
+            //     innerProgress.style.background = "red";
+            // }
+
+
+            if (--duration < 0) {
+                clearInterval(countdownInterval);
+                // submitButton.click();
+            }
+
+
+        }, 1000);
+
+
+    </script>
+
+    <script>
+
+        const ps = new PerfectScrollbar('.quick-questions-content', {
+            wheelSpeed: 0.4,
+            minScrollbarLength: 10,
+            scrollYMarginOffset: 50
+        });
+        ps.update();
+
+
+        $(document).ready(function () {
+
+            $(".close-c").on("click", function () {
+                $(".quick-questions-container").hide(300);
+            });
+
+            $(".go-quick").on("click", function () {
+                $(".quick-questions-container").show(300);
+            });
+
+            $(".flag").on("click", function () {
+                $(this).toggleClass("flag-active");
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
