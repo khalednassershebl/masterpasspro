@@ -244,6 +244,9 @@ a {
 
 .why {
     padding: 75px 0;
+    @media (max-width: $max-9) {
+        padding: 0 0 50px 0;
+    }
     .why-info {
         .why-part {
             .why-text {
@@ -333,6 +336,9 @@ a {
             display: flex;
             align-items: center;
             color: #FFF;
+            @media (max-width: $max-9) {
+                margin-top: 25px;
+            }
             .why-part-img-content {
                 .h3-part {
                     margin-bottom: 35px;
@@ -382,9 +388,15 @@ a {
         margin-top: 50px;
         border-top: 1px dashed #CACACA;
         border-bottom: 1px dashed #CACACA;
+        @media (max-width: $max-9) {
+            border: unset;
+        }
         .why-vision-part {
             padding: 30px 40px;
             border-left: 1px dashed #CACACA;
+            @media (max-width: $max-9) {
+                border: unset;
+            }
             lord-icon {
                 height: 60px;
                 width: 60px;
@@ -611,14 +623,16 @@ a {
             .swiper-slide{
               width: 325px;
               @media (max-width: $max-5) {
-                padding: 39px;
+                padding: 0;
+                width: 150px;
+                margin: 0px 10px 0 10px !important;
               }
               img {
                 height: 375px;
                 position: relative;
-                // @media (max-width: $max-5) {
-                //     height: 300px;
-                // }
+                @media (max-width: $max-5) {
+                    height: 200px;
+                }
               }
             }
           }
@@ -655,6 +669,9 @@ a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width: $max-5) {
+                    padding: 10px 10px;
+                }
                 .single-content-text {
                     text-align: center;
                 }
@@ -664,7 +681,7 @@ a {
                     margin-bottom: 0;
                     color: #FFF;
                     @media (max-width: $max-5) {
-                        font-size: 0.75rem;
+                        font-size: 0.7rem;
                     }
                 }
                 span {
@@ -675,7 +692,7 @@ a {
                     text-align: center;
                     margin: auto;
                     @media (max-width: $max-5) {
-                        font-size: 0.65rem;
+                        font-size: 0.6rem;
                     }
                 }
                 .single-content-icon {
@@ -726,11 +743,17 @@ a {
         background-color: #000;
         background-image: url(assets/images/h1-hero-bg.png);
         border-radius: 12px;
+        @media (max-width: $max-7) {
+            padding: 40px 40px;
+        }
     }
     .section-header-side {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $max-7) {
+            display: block;
+        }
         .section-header-heading {
             flex: 1;
         }
@@ -748,6 +771,9 @@ a {
             color: #FFF;
             margin-right: 50px;
             flex: 1;
+            @media (max-width: $max-7) {
+                margin-right: 0;
+            }
         }
     }
     .nums-row {
@@ -755,6 +781,9 @@ a {
         .num-card {
             border: 1px solid #313131;
             padding: 30px 35px 30px 35px;
+            @media (max-width: $max-7) {
+                border: unset;
+            }
             h3 {
                 font: {
                     family: "num";
@@ -813,6 +842,9 @@ a {
             background: #FFF;
             border-radius: 12px;
             padding: 30px 40px;
+            @media (max-width: $max-9) {
+                margin: 12px 0;
+            }
             .rating {
                 .rating-info {
                     display: flex;

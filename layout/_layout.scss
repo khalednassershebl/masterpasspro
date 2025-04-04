@@ -62,6 +62,9 @@
                     font-weight: 600;
                     word-spacing: 3px;
                     letter-spacing: 1px;
+                    @media (max-width: $max-9) {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
@@ -1037,7 +1040,6 @@
             align-items: center;
             @media (max-width: $max-5) {
                 font-size: 0.9rem;
-                color: #000;
             }
             span {
                 color: #436cff;
@@ -1281,6 +1283,9 @@
         box-shadow: unset;
         background: #000;
         height: calc(80vh);
+        @media (max-width: $max-5) {
+            height: 50vh;
+        }
         background: {
             image: url(assets/images/h1-hero-bg.png);
             size: cover;
@@ -1314,6 +1319,9 @@
         .index-header {
             padding: 0 0 0 0;
             height: calc(80vh - 140px);
+            @media (max-width: $max-5) {
+                height: calc(50vh - 100px);
+            }
             .container {
                 height: 100%;
             }
@@ -1330,6 +1338,9 @@
                 right: 110px;
                 transform: translate(0, -50%);
                 animation: float 3s ease-in-out infinite;
+                @media (max-width: $max-7) {
+                    display: none;
+                }
             }
             .shape-float-3 {
                 position: absolute;
@@ -1337,12 +1348,18 @@
                 left: 110px;
                 transform: translate(0, -50%);
                 animation: float 3s ease-in-out infinite;
+                @media (max-width: $max-7) {
+                    display: none;
+                }
             }
             .index-header-actions {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-top: 35px;
+                @media (max-width: $max-9) {
+                    margin-top: 25px;
+                }
                 a {
                     margin: 0 10px;
                     border-radius: 10px;
@@ -1350,6 +1367,10 @@
                     font-size: 0.9rem;
                     font-weight: 600;
                     padding: 15px 35px;
+                    @media (max-width: $max-7) {
+                        padding: 10px 20px;
+                        font-size: 0.75rem;
+                    }
                     svg {
                         height: 20px;
                         width: 20px;
@@ -1358,12 +1379,19 @@
                         border: unset;
                         border-radius: unset;
                         padding: unset;
+                        @media (max-width: $max-7) {
+                            height: 15px;
+                            width: 15px;
+                        }
                     }
                     span {
                         display: inline-block;
                         font-size: 0.8rem;
                         font-weight: 600;
                         padding-right: 10px;
+                        @media (max-width: $max-7) {
+                            font-size: 0.65rem;
+                        }
                     }
                 }
                 .signup {
@@ -1423,6 +1451,15 @@
         img {
             height: 50px;
             animation: rotation 3s infinite linear;
+            @media (max-width: $max-9) {
+                height: 40px;
+            }
+            @media (max-width: $max-7) {
+                height: 30px;
+            }
+            @media (max-width: $max-5) {
+                height: 20px;
+            }
         }
     }
 
@@ -1434,6 +1471,7 @@
         @media (max-width: $max-7) {
             width: 95%;
             font-size: 0.8rem;
+            margin-top: 10px;
         }
     }
     svg {

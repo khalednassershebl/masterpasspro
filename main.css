@@ -246,6 +246,11 @@ p.text a {
   word-spacing: 3px;
   letter-spacing: 1px;
 }
+@media (max-width: 991.98px) {
+  .upper-header .upper-header-content .upper-header-info .date span {
+    font-size: 0.7rem;
+  }
+}
 
 .page-header {
   height: 40vh !important;
@@ -1274,7 +1279,6 @@ p.text a {
 @media (max-width: 575.98px) {
   .footer .logo-text h3 {
     font-size: 0.9rem;
-    color: #000;
   }
 }
 .footer .logo-text h3 span {
@@ -1529,6 +1533,11 @@ p.text a {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media (max-width: 575.98px) {
+  .index-layout .header {
+    height: 50vh;
+  }
+}
 .index-layout .header:before {
   content: "";
   position: absolute;
@@ -1554,6 +1563,11 @@ p.text a {
   padding: 0 0 0 0;
   height: calc(80vh - 140px);
 }
+@media (max-width: 575.98px) {
+  .index-layout .header .index-header {
+    height: calc(50vh - 100px);
+  }
+}
 .index-layout .header .index-header .container {
   height: 100%;
 }
@@ -1571,6 +1585,11 @@ p.text a {
   transform: translate(0, -50%);
   animation: float 3s ease-in-out infinite;
 }
+@media (max-width: 767.98px) {
+  .index-layout .header .index-header-content .shape-float-1 {
+    display: none;
+  }
+}
 .index-layout .header .index-header-content .shape-float-3 {
   position: absolute;
   bottom: 125px;
@@ -1578,11 +1597,21 @@ p.text a {
   transform: translate(0, -50%);
   animation: float 3s ease-in-out infinite;
 }
+@media (max-width: 767.98px) {
+  .index-layout .header .index-header-content .shape-float-3 {
+    display: none;
+  }
+}
 .index-layout .header .index-header-content .index-header-actions {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 35px;
+}
+@media (max-width: 991.98px) {
+  .index-layout .header .index-header-content .index-header-actions {
+    margin-top: 25px;
+  }
 }
 .index-layout .header .index-header-content .index-header-actions a {
   margin: 0 10px;
@@ -1591,6 +1620,12 @@ p.text a {
   font-size: 0.9rem;
   font-weight: 600;
   padding: 15px 35px;
+}
+@media (max-width: 767.98px) {
+  .index-layout .header .index-header-content .index-header-actions a {
+    padding: 10px 20px;
+    font-size: 0.75rem;
+  }
 }
 .index-layout .header .index-header-content .index-header-actions a svg {
   height: 20px;
@@ -1601,11 +1636,22 @@ p.text a {
   border-radius: unset;
   padding: unset;
 }
+@media (max-width: 767.98px) {
+  .index-layout .header .index-header-content .index-header-actions a svg {
+    height: 15px;
+    width: 15px;
+  }
+}
 .index-layout .header .index-header-content .index-header-actions a span {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
   padding-right: 10px;
+}
+@media (max-width: 767.98px) {
+  .index-layout .header .index-header-content .index-header-actions a span {
+    font-size: 0.65rem;
+  }
 }
 .index-layout .header .index-header-content .index-header-actions .signup {
   color: #FFF;
@@ -1671,6 +1717,21 @@ p.text a {
   height: 50px;
   animation: rotation 3s infinite linear;
 }
+@media (max-width: 991.98px) {
+  .index-header h3 img {
+    height: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .index-header h3 img {
+    height: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .index-header h3 img {
+    height: 20px;
+  }
+}
 .index-header p {
   width: 700px;
   margin: 25px auto 0 auto;
@@ -1681,6 +1742,7 @@ p.text a {
   .index-header p {
     width: 95%;
     font-size: 0.8rem;
+    margin-top: 10px;
   }
 }
 .index-header svg {
@@ -5608,6 +5670,11 @@ a:hover {
 .why {
   padding: 75px 0;
 }
+@media (max-width: 991.98px) {
+  .why {
+    padding: 0 0 50px 0;
+  }
+}
 .why .why-info .why-part .why-text .pretitle {
   font-size: 0.85rem;
   font-weight: 600;
@@ -5699,6 +5766,11 @@ a:hover {
   align-items: center;
   color: #FFF;
 }
+@media (max-width: 991.98px) {
+  .why .why-info .why-part-img {
+    margin-top: 25px;
+  }
+}
 .why .why-info .why-part-img .why-part-img-content .h3-part {
   margin-bottom: 35px;
 }
@@ -5751,9 +5823,19 @@ a:hover {
   border-top: 1px dashed #CACACA;
   border-bottom: 1px dashed #CACACA;
 }
+@media (max-width: 991.98px) {
+  .why .why-vision {
+    border: unset;
+  }
+}
 .why .why-vision .why-vision-part {
   padding: 30px 40px;
   border-left: 1px dashed #CACACA;
+}
+@media (max-width: 991.98px) {
+  .why .why-vision .why-vision-part {
+    border: unset;
+  }
 }
 .why .why-vision .why-vision-part lord-icon {
   height: 60px;
@@ -5971,12 +6053,19 @@ a:hover {
 }
 @media (max-width: 575.98px) {
   .team .carousel .swiper .swiper-slide {
-    padding: 39px;
+    padding: 0;
+    width: 150px;
+    margin: 0px 10px 0 10px !important;
   }
 }
 .team .carousel .swiper .swiper-slide img {
   height: 375px;
   position: relative;
+}
+@media (max-width: 575.98px) {
+  .team .carousel .swiper .swiper-slide img {
+    height: 200px;
+  }
 }
 .team .carousel .single {
   border-radius: 12px;
@@ -6013,6 +6102,11 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 575.98px) {
+  .team .carousel .single .single-content {
+    padding: 10px 10px;
+  }
+}
 .team .carousel .single .single-content .single-content-text {
   text-align: center;
 }
@@ -6024,7 +6118,7 @@ a:hover {
 }
 @media (max-width: 575.98px) {
   .team .carousel .single .single-content h3 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
 .team .carousel .single .single-content span {
@@ -6037,7 +6131,7 @@ a:hover {
 }
 @media (max-width: 575.98px) {
   .team .carousel .single .single-content span {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 }
 .team .carousel .single .single-content .single-content-icon {
@@ -6091,10 +6185,20 @@ a:hover {
   background-image: url(assets/images/h1-hero-bg.png);
   border-radius: 12px;
 }
+@media (max-width: 767.98px) {
+  .nums .nums-container {
+    padding: 40px 40px;
+  }
+}
 .nums .section-header-side {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .nums .section-header-side {
+    display: block;
+  }
 }
 .nums .section-header-side .section-header-heading {
   flex: 1;
@@ -6114,12 +6218,22 @@ a:hover {
   margin-right: 50px;
   flex: 1;
 }
+@media (max-width: 767.98px) {
+  .nums .section-header-side .text {
+    margin-right: 0;
+  }
+}
 .nums .nums-row {
   margin-top: 25px;
 }
 .nums .nums-row .num-card {
   border: 1px solid #313131;
   padding: 30px 35px 30px 35px;
+}
+@media (max-width: 767.98px) {
+  .nums .nums-row .num-card {
+    border: unset;
+  }
 }
 .nums .nums-row .num-card h3 {
   font-family: "num";
@@ -6171,6 +6285,11 @@ a:hover {
   background: #FFF;
   border-radius: 12px;
   padding: 30px 40px;
+}
+@media (max-width: 991.98px) {
+  .testimonials .testimonials-container .tes-card {
+    margin: 12px 0;
+  }
 }
 .testimonials .testimonials-container .tes-card .rating .rating-info {
   display: flex;
