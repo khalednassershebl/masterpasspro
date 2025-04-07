@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Main Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Important Meta Tags -->
+    <meta name="author" content="enote" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Library Styles -->
+    <link rel="stylesheet" href="../assets/scss/libs/bootstrap.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../main.css" />
+
+    <!-- Page Title & Icon -->
+    <title>check mail</title>
+    <link rel="shortcut icon" href="../assets/images/icon.png" />
+
+</head>
+
+<body>
+
+
+    <div class="register">
+        <div class="register-overlay"></div>
+
+        <div class="row align-items-center">
+
+            <div class="col-xl-12 col-lg-12 order-1 order-lg-1">
+                <div class="form-container form-container-otp">
+                    <div class="form-card">
+
+                        <div class="success-job">
+
+                            <div class="main-container">
+                                <div class="check-container">
+                                    <div class="check-background">
+                                        <lord-icon src="https://cdn.lordicon.com/ozlkyfxg.json" trigger="loop"
+                                            colors="primary:#121331,secondary:#7868e6">
+                                        </lord-icon>
+                                    </div>
+                                    <div class="check-shadow"></div>
+                                </div>
+                            </div>
+
+                            <h3>تم التسجيل بنجاح تصفح البريد الإلكترونى الخاص بك</h3>
+                            <p>يرجى مراجعة الايميل الخاص بك لإدخال رمز otp</p>
+                            <a href="../index.html" class="back-home">العودة للرئيسية</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Scripts -->
+    <script src="../assets/js/libs/jquery-3.6.3.min.js"></script>
+    <script src="../assets/js/libs/bootstrap.min.js"></script>
+    <script src="../assets/js/libs/popper.js"></script>
+    <script src="../main.js"></script>
+    <!-- Addition Scripts -->
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#foucs").focus()
+        });
+        var otp_inputs = document.querySelectorAll(".otp__digit")
+        var mykey = "0123456789".split("")
+        otp_inputs.forEach((_) => {
+            _.addEventListener("keyup", handle_next_input)
+        })
+        function handle_next_input(event) {
+            let current = event.target
+            let index = parseInt(current.classList[1].split("__")[2])
+            current.value = event.key
+
+            if (event.keyCode == 8 && index > 1) {
+                current.previousElementSibling.focus()
+            }
+            if (index < 6 && mykey.indexOf("" + event.key + "") != -1) {
+                var next = current.nextElementSibling;
+                next.focus()
+            }
+            var _finalKey = ""
+            for (let { value } of otp_inputs) {
+                _finalKey += value
+            }
+            if (_finalKey.length == 6) {
+                document.querySelector("#_otp").classList.replace("_notok", "_ok")
+                document.querySelector("#_otp").innerText = _finalKey
+            } else {
+                document.querySelector("#_otp").classList.replace("_ok", "_notok")
+                document.querySelector("#_otp").innerText = _finalKey
+            }
+        }
+    </script>
+
+</body>
+
+</html>
