@@ -242,9 +242,12 @@ a {
 
 
 // /////////////////////////////////////////////////////////
-
+.content {
+    padding: 0 !important
+}
 .why {
     padding: 75px 0;
+    background: #FFF;
     @media (max-width: $max-9) {
         padding: 0 0 50px 0;
     }
@@ -597,6 +600,7 @@ a {
 .team {
     padding: 100px 0;
     position: relative;
+    background: #FFF;
     .section-header-center {
         margin-bottom: 75px;
         .pretitle {
