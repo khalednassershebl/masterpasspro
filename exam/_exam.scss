@@ -318,6 +318,9 @@ body {
             margin-bottom: 12px;
             position: relative;
             transition: all 0.3s ease-in-out;
+            @media (max-width: $max-5) {
+                padding: 25px 25px 85px;
+            }
             .ques-head {
                 position: absolute;
                 top: 20px;
@@ -1051,5 +1054,177 @@ input:checked ~ .abgd span {
     visibility: visible !important;
 }
 
-  
+[lang="en"] {
+    .content {
+        direction: ltr;
+    }
+    .exam {
+        .exam-details {
+            text-align: left;
+            direction: ltr;
+            @media (max-width: $max-5) {
+                right: unset;
+                left: 0;
+            }
+            .exam-info {
+                span.tag {
+                    margin-left: inset;
+                    margin-right: 3px;
+                }
+            }
+            .exam-actions {
+                @media (max-width: $max-5) {
+                    left: unset;
+                    right: 15px;
+                }
+                .exam-time {
+                    .timer {
+                        svg {
+                            margin-right: unset;
+                            margin-left: 2px;
+                        }
+                        p {
+                            margin-right: unset;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .quick-questions-container {
+            @media (max-width: $max-9) {
+                right: unset;
+                left: 0;
+            }
+        }
+        .quick-questions {
+            @media (max-width: $max-9) {
+                right: unset;
+                left: 0;
+            }
+            .quick-questions-header {
+                .i {
+                    span {
+                        margin-right: unset;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .quick-questions-content {
+                padding: 0 0 0 10px;
+                @media (max-width: $max-9) {
+                    text-align: left;
+                }
+            }
+        }
+        .questions {
+            transition: all 0.3s ease-in-out;
+            .ques {
+                .ques-head {
+                    left: unset;
+                    right: 15px;
+                    @media(max-width: $max-7) {
+                        left: unset;
+                        right: 50%;
+                        transform: translate(50%, 0);
+                    }
+                    .flag {
+                        margin-right: unset;
+                        margin-left: 10px;
+                    }
+                }
+                .question {
+                    .question-content {
+                        direction: ltr;
+                        align-items: center;
+                        h4 {
+                            margin: 4px 5px 0 0;
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+                .questions-group {
+                    .inputGroup {
+                        input {
+                            right: unset;
+                            left: 0;
+                        }
+                        .abgd {
+                            right: unset;
+                            left: 6px;
+                        }
+                        .answer {
+                            padding: 15px 10px 15px 60px;
+                            cursor: pointer;
+                            &:before {
+                                left: unset;
+                                right: 50%;
+                                transform: translate(50%, -50%) scale3d(1, 1, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .computer-mode {
+            @media (max-width: $max-5) {
+                right: unset;
+                left: 0;
+            }
+            .form-button {
+                a {
+                    padding: 12px 11px;
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        button.exit  {
+            svg {
+                margin-left: unset;
+                margin-right: 4px;
+            }
+        }
+        .calculator-btn {
+            margin-right: unset;
+            margin-left: 10px;
+            @media (max-width: $max-5) {
+                right: unset;
+                left: 45px;
+            }
+            svg {
+                margin-left: unset;
+                margin-right: 8px;
+            }
+        }
+    }
+    .mobile-mode {
+        @media (max-width: $max-5) {
+            right: unset;
+            left: 0;
+        }
+        .form-button {
+            a {
+                padding: 12px 11px;
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .scrollbar-y {
+        right: unset;
+        left: 0;
+    }
+    .ps__rail-y {
+        right: unset !important;
+        left: 0 !important;
+    }
+    .ps__rail-y .ps__thumb-y {
+        left: 0;
+    }
+}
 

@@ -135,7 +135,7 @@ a {
         margin-bottom: 10px;
         span {
             font-weight: 400;
-            color: #436cff;
+            color: #2f3d7a;
         }
         @media (max-width: $max-5) {
             font-size: 1.75rem;
@@ -175,7 +175,7 @@ a {
 // }
 // /* Handle */
 // ::-webkit-scrollbar-thumb {
-//     background: #436cff; 
+//     background: #2f3d7a; 
 // }
 // /* Handle on hover */
 // ::-webkit-scrollbar-thumb:hover {
@@ -189,7 +189,7 @@ a {
 //     display: block;
 //     margin-bottom: 10px;
 //     font-weight: 600;
-//     background-image: linear-gradient(to right top, #000957, #436cff);
+//     background-image: linear-gradient(to right top, #000957, #2f3d7a);
 //     -webkit-background-clip: text;
 //     -webkit-text-fill-color: transparent;
 //     text-align: center;
@@ -245,6 +245,7 @@ a {
 .content {
     padding: 0 !important
 }
+
 .why {
     padding: 75px 0;
     background: #FFF;
@@ -355,7 +356,7 @@ a {
                         } 
                     }
                     .colred {
-                        color: #436cff; 
+                        color: #2f3d7a; 
                         font-size: 3.6rem; 
                         @media (max-width: $max-5) {
                             font-size: 2.8rem;
@@ -379,7 +380,7 @@ a {
                     margin-right: 0;
                     border: unset !important;
                     color: #000933;
-                    background: #436cff;
+                    background: #2f3d7a;
                     border-radius: 12px;
                     font-weight: 600;
                     letter-spacing: 1px;
@@ -423,7 +424,7 @@ a {
                     position: absolute;
                     height: 85px;
                     width: 85px;
-                    background-image: radial-gradient(at bottom center, #00c5da 0%, #436cff 60%);
+                    background-image: radial-gradient(at bottom center, #00c5da 0%, #2f3d7a 60%);
                     border-radius: 50%;
                     right: -17px;
                     top: 5px;
@@ -739,6 +740,7 @@ a {
           }
     }
 }
+
 .nums {
     margin-top: 50px;
     position: relative;
@@ -815,6 +817,7 @@ a {
         }
     }
 }
+
 .testimonials {
     margin-top: -150px;
     padding: 225px 0 100px 0;
@@ -1069,9 +1072,6 @@ a {
 // /////////////////////////////////////////////////////////
 
 
-
-
-
 // For Custom Swiper 
 @keyframes scroll {
 0%{
@@ -1099,4 +1099,227 @@ a {
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+[lang="en"] {
+    body {
+        direction: ltr;
+        text-align: right;
+    }
+    .section-header-center {
+        h3 {
+            padding-left: unset;
+            padding-right: 10px;
+        }
+    }
+    .why {
+        text-align: left;
+        .why-info {
+            .why-part {
+                .why-text {
+                    .pretitle {
+                        text-align: left;
+                    }
+                    a {
+                        margin-right: unset;
+                        margin-left: 0;
+                    }
+                    .call-us-btn {
+                        margin-right: unset;
+                        margin-left: 25px;
+                        svg {
+                            margin-right: unset;
+                            margin-left: 15px;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .why-vision {
+            .why-vision-part {
+                border-left: unset;
+                border-right: 1px dashed #CACACA;
+                text-align: left;
+                h5 {
+                    &:after {
+                        right: unset;
+                        left: -17px;
+                    }
+                }
+            }
+            .unborded {
+                border: unset;
+            }
+            .cus-padd {
+                padding: 30px;
+            }
+        }
+    }
+    .services {
+        .section-header-center {
+            .pretitle {
+                text-align: left;
+            }
+        }
+        .service-card {
+            .icon {
+                .icon-container {
+                    lord-icon {
+                        margin-right: unset;
+                        margin-left: -10px;
+                    }
+                }
+            }
+            .service-text {
+                a {
+                    span {
+                        margin-left: 2px;
+                        margin-right: 9px;
+                    }
+                    svg {
+                        transform: rotate(270deg);
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+        .service-card-big {
+            background: #FFF;
+            padding: 20px 20px 20px 340px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            .icon {
+                margin-bottom: 20px;
+                .icon-container {
+                    svg {
+                        width: 36px;
+                        fill: $secondColor;
+                    }
+                    lord-icon {
+                        margin-right: -10px;
+                    }
+                }
+            }
+            .service-text {
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 1.1rem;
+                    color: #515151;
+                    font-weight: 500;
+                }
+                a {
+                    background: #f4f4f4;
+                    height: 40px;
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    margin-top: 15px;
+                    span {
+                        font-size: 0.75rem;
+                        color: #636363;
+                        margin-right: 2px;
+                        margin-left: 9px;
+                        font-weight: 600;
+                    }
+                    svg {
+                        fill: #636363;
+                        width: 18px;
+                        margin-top: 1px;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .nums {
+        .section-header-side {
+            text-align: left;
+            .text {
+                margin-right: unset;
+                margin-left: 50px;
+                @media (max-width: $max-7) {
+                    margin-right: unset;
+                    margin-left: 0;
+                }
+            }
+        }
+        .nums-row {
+            .num-card {
+                text-align: left;
+                h3 {
+                    &:before {
+                        right: unset;
+                        left: -35px;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials {
+        .section-header-center {
+            .pretitle {
+                text-align: left;
+            }
+        }
+        .testimonials-container {
+            .tes-card {
+                text-align: left;
+                .rating {
+                    .rating-info {
+                        span {
+                            margin-left: unset;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    .fq {
+        .advan-line {
+            text-align: left;
+            figure {
+                margin-right: unset;
+                margin-left: auto;
+            }
+            .line-boxs {
+                right: unset;
+                left: 15px;
+                .line-box {
+                    margin-left: unset;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .advan-line-info {
+            padding-right: unset;
+            padding-left: 0;
+            @media (max-width: $max-5) {
+                padding-right: unset;
+                padding-left: 0;
+            }
+        }
+        .fq-indent {        
+              .faq-answer {
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+            
+        }
+        a {
+            margin-right: unset;
+            margin-left: 15px;
+        }
+    }
 }

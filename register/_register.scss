@@ -626,3 +626,19 @@ p {
     border: 0;
 }
 }
+[lang="en"] {
+    .register {
+        .form-container {
+            .form-card {
+                .form {
+                    .form-group {
+                        label {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

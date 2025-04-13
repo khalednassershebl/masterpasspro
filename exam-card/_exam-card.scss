@@ -148,120 +148,129 @@
     }
 }
 
-// [lang="en"] {
-//     .exam-card {
-//         .card-description {
-//             .upper-info {
-//                 .exam-info {
-//                     p {
-//                         margin: 0 0 0 5px;
-//                     }
-//                 }
-//             }
-//             .exam-name {
-//                 text-align: left;
-//                 padding-left: 2px;
-//             }
-//             .down-info {
-//                 .exam-score-parent {
-//                     .exam-score {
-//                         right: unset;
-//                         left: 0;
-//                         border-top-left-radius: 20px;
-//                         border-bottom-left-radius: 20px;
-//                     }
-//                 }
-//                 .score {
-//                     p {
-//                         margin: 0 0 0 10px;
-//                         .exp-title {
-//                             margin-left: 4px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         a.enter {
-//             svg {
-//                 margin-left: unset;
-//                 margin-right: 4px;
-//             }
-//         }
-//     }
-//     .exam-card-bank {
-//         .card-description {
-//             .upper-info {
-//                 .exam-info {
-//                     .reset-btn {
-//                         background: #7868e6;
-//                         border-radius: 50px;
-//                         height: 20px;
-//                         width: 20px;
-//                         margin: 0 0 0 10px;
-//                         display: flex;
-//                         align-items: center;
-//                         justify-content: center;
-//                         svg {
-//                             width: 12px;
-//                             fill: #FFF;
-//                         }
-//                     }
-//                 }
-//             }
-//             .down-info {
-//                 color: #3e3f5e;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: space-between;
-//                 .exam-score-parent {
-//                     background: #f6f8ff;
-//                     height: 20px;
-//                     width: 100%;
-//                     position: relative;
-//                     border-radius: 20px;
-//                     display: flex;
-//                     align-items: center;
-//                     font-weight: 900;
-//                     font-size: 0.7rem;
-//                     .bank-exam-correct {
-//                         background: #2ae99e;
-//                         color: #FFF;
-//                         height: 100%;
-//                         position: relative;
-//                         z-index: 2;
-//                         border-top-left-radius: 12px;
-//                         border-bottom-left-radius: 12px;
-//                         align-items: center;
-//                         display: flex;
-//                         justify-content: center;
-//                     }
-//                     .bank-exam-not-answer {
-//                         background: #f6f8ff;
-//                         height: 100%;
-//                         position: relative;
-//                         z-index: 2;
-//                         align-items: center;
-//                         display: flex;
-//                         justify-content: center;
-//                         border-radius: 12px;
-//                     }
-//                     .bank-exam-worng {
-//                         background: #ee4266;
-//                         color: #FFF;
-//                         height: 100%;
-//                         position: relative;
-//                         z-index: 2;
-//                         border-top-right-radius: 12px;
-//                         border-bottom-right-radius: 12px;
-//                         align-items: center;
-//                         display: flex;
-//                         justify-content: center;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+[lang="en"] {
+    .exam-card {
+        .upper-info {
+            .exam-info {
+                p {
+                    margin: 0 0 0 5px;
+                    svg {
+                        margin-left: unset;
+                        margin-right: 3px;
+                    }
+                    span {
+                        margin-left: unset;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+        .exam-name {
+            text-align: left;
+            padding-left: 2px;
+        }
+        .down-info {
+            .exam-score-parent {
+                .exam-score {
+                    right: unset;
+                    left: 0;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+            .score {
+                p {
+                    margin: 0 0 0 10px;
+                    .exp-title {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        .date {
+            text-align: left;
+        }
+        a.enter {
+            svg {
+                margin-left: unset;
+                margin-right: 4px;
+            }
+        }
+    }
+    .exam-card-bank {
+        .card-description {
+            .upper-info {
+                .exam-info {
+                    .reset-btn {
+                        background: #7868e6;
+                        border-radius: 50px;
+                        height: 20px;
+                        width: 20px;
+                        margin: 0 0 0 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            width: 12px;
+                            fill: #FFF;
+                        }
+                    }
+                }
+            }
+            .down-info {
+                color: #3e3f5e;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .exam-score-parent {
+                    background: #f6f8ff;
+                    height: 20px;
+                    width: 100%;
+                    position: relative;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 900;
+                    font-size: 0.7rem;
+                    .bank-exam-correct {
+                        background: #2ae99e;
+                        color: #FFF;
+                        height: 100%;
+                        position: relative;
+                        z-index: 2;
+                        border-top-left-radius: 12px;
+                        border-bottom-left-radius: 12px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .bank-exam-not-answer {
+                        background: #f6f8ff;
+                        height: 100%;
+                        position: relative;
+                        z-index: 2;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 12px;
+                    }
+                    .bank-exam-worng {
+                        background: #ee4266;
+                        color: #FFF;
+                        height: 100%;
+                        position: relative;
+                        z-index: 2;
+                        border-top-right-radius: 12px;
+                        border-bottom-right-radius: 12px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
 .bank-round-12 {
     border-radius: 12px !important;
 }

@@ -467,3 +467,71 @@
           transform: rotate(360deg);
       }
   }
+
+  [lang="en"] {
+    .setting-content-container {
+        .setting-tabs {
+            text-align: left;
+            .tab {
+                padding: 25px 0 25px 20px;
+                .media-body {
+                    margin-right: unset;
+                    margin-left: 10px;
+                }
+                .toggle-plus {
+                    left: unset;
+                    right: 20px;
+                }
+            }
+            .tab-content {
+                padding: 0 0 0 40px;
+                ul {
+                    a {
+                        li {
+                            margin: 12px 12px 0 0;
+                            span {
+                                left: unset;
+                                right: 10px;
+                            }
+                        }
+                        &:hover {
+                            li {
+                                margin: 12px 7px 0 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .setting-content {
+        text-align: left;
+        h6 {
+            text-align: left;
+            padding: 0px 0 20px 5px;
+        }
+        .form-group {
+            label {
+                margin: 0 0 12px 6px;
+            }
+        }
+        .create-account-btn {
+            svg {
+                margin-left: unset;
+                margin-right: 4px;
+            }
+        }
+        .form-check {
+            margin: 10px 0 10px 5px;
+            input {
+                margin: 3px 5px 0 0px;
+            }
+        }
+        .active-input {
+            label {
+                right: unset;
+                left: 12px;
+            }
+        }
+    }
+  }

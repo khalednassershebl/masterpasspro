@@ -605,3 +605,149 @@ a {
         }
     }
 }
+
+[lang="en"] {
+    .course-banner {
+        padding: 0px 60px 0 150px;
+        &:before {
+            left: unset;
+            right: 0%;
+        }
+        @media(max-width: $max-12) {
+            padding: 0 28px 0 108px;
+        }
+        @media(max-width: $max-7) {
+            padding: 20px 25px 20px 108px;
+        }
+        @media(max-width: $max-5) {
+            padding: 25px 20px 25px 20px;
+        }
+        .img-icon {
+            right: unset;
+            left: 24px;
+        }
+        .banner-content {
+            text-align: left;
+        }
+        .course-progress {
+            .progress {
+                .inner-progress {
+                    right: unset;
+                    left: 0;
+                }
+            }
+            .course-score {
+                p {
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+    }
+    .courses-registered {
+        .widget-box-title {
+            text-align: left;
+        }
+        .courses-registered-content {
+            .courses-registered-preview {
+                .media {
+                    img {
+                        margin-left: unset;
+                        margin-right: 10px;
+                    }
+                    .media-body {
+                        h5 {
+                            text-align: left;
+                        }
+                        .complete {
+                            text-align: left;
+                            margin-right: unset;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+                .progress {
+                    .inner-progress {
+                        right: unset;
+                        left: 0;
+                    }
+                }
+            }
+    
+        }
+    }
+    .month-tabs {
+        .month-tabs-header {
+            text-align: left;
+            h3 {
+                text-align: left;
+            }
+        }
+        ul {
+            li {
+                padding: 4px 4px 4px 7px;
+                a {
+                    svg {
+                        margin-left: unset;
+                        margin-right: 6px;
+                    }
+                    span {
+                        margin-right: unset;
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .month-tabs-content {
+        .month-tabs-cards {
+            .task-card {
+                .card-header-g {
+                    text-align: left;
+                    .card-icon {
+                        margin-left: unset;
+                        margin-right: 12px;
+                    }
+                }
+                .card-header-g-text {
+                    margin-right: unset;
+                    margin-left: 50px;
+                    p {
+                        text-align: left;
+                        margin-left: unset;
+                        margin-right: 3px;
+                    }
+                    span {
+                        margin-left: unset;
+                        margin-right: 3px;
+                    }
+                }
+                .card-action {
+                    .course-progress {
+                        .course-persentage {
+                            margin: 0 10px 0 0;
+                        }
+                        .progress {
+                            .inner-progress {
+                                right: unset;
+                                left: 0;
+                            }
+                        }
+                        .course-score {
+                            p {
+                                margin: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+                .card-date {
+                    .card-date-content {
+                        svg {
+                            margin-left: unset;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
